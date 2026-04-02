@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================
+       SEO — Page aide non indexée
+  ============================================ -->
+  <title>Aide — BlogStack</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Centre d'aide BlogStack — trouvez rapidement des réponses à vos questions.">
+
+  <!-- ============================================
+       FAVICON & RESSOURCES
+  ============================================ -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="help.css">
+</head>
+
+<body>
+
+  <!-- ============================================
+       HEADER MINIMAL
+  ============================================ -->
+  <header class="help-header">
+    <button class="help-header__back" onclick="window.history.back()" aria-label="Retour">
+      <i class="fas fa-arrow-left"></i>
+    </button>
+    <a href="index.html" class="help-header__logo">BlogStack</a>
+    <div class="help-header__spacer"></div>
+  </header>
+
+  <!-- ============================================
+       HERO
+  ============================================ -->
+  <section class="help-hero">
+    <div class="help-hero__inner">
+      <div class="help-hero__icon">
+        <i class="fas fa-circle-question"></i>
+      </div>
+      <h1 class="help-hero__title">Comment pouvons-nous<br><span>vous aider ?</span></h1>
+      <p class="help-hero__desc">Trouvez rapidement une réponse ou contactez-nous directement.</p>
+    </div>
+  </section>
+
+  <main class="help-main">
+
+    <!-- ============================================
+         CONTACT RAPIDE
+    ============================================ -->
+    <section class="help-section">
+      <p class="help-label">Contact direct</p>
+      <h2 class="help-section__title">Parlez à un humain</h2>
+      <div class="help-contacts">
+
+        <a href="mailto: mprincegame@gmail.com" class="help-contact">
+          <div class="help-contact__icon help-contact__icon--mail">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="help-contact__info">
+            <p class="help-contact__label">Email</p>
+            <p class="help-contact__value">Écrivez-nous par mail</p>
+            <p class="help-contact__delay">Réponse sous 24h</p>
+          </div>
+          <i class="fas fa-arrow-right help-contact__arrow"></i>
+        </a>
+
+        <a href="https://t.me/BlogStackBot" target="_blank" rel="noopener noreferrer" class="help-contact">
+        <div class="help-contact__icon help-contact__icon--tg">
+        <i class="fab fa-telegram"></i>
+        </div>
+        <div class="help-contact__info">
+        <p class="help-contact__label">Support Telegram</p>
+        <p class="help-contact__value">Envoyez-nous un message</p>
+        <p class="help-contact__delay">Réponse rapide</p>
+        </div>
+        <i class="fas fa-arrow-right help-contact__arrow"></i>
+        </a>
+
+        <a href="https://twitter.com/blogstack7303" target="_blank" rel="noopener noreferrer" class="help-contact">
+          <div class="help-contact__icon help-contact__icon--x">
+            <i class="fab fa-x-twitter"></i>
+          </div>
+          <div class="help-contact__info">
+            <p class="help-contact__label">X (Twitter)</p>
+            <p class="help-contact__value">Envoyez un DM</p>
+            <p class="help-contact__delay">DM ouverts</p>
+          </div>
+          <i class="fas fa-arrow-right help-contact__arrow"></i>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ============================================
+         FAQ
+    ============================================ -->
+    <section class="help-section">
+      <p class="help-label">Questions fréquentes</p>
+      <h2 class="help-section__title">FAQ</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false">
+            <span>Comment s'abonner à la Newsletter Premium ?</span>
+            <i class="fas fa-chevron-down faq-item__icon"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Rendez-vous sur la page <a href="newsletter.html">Newsletter Premium</a>, choisissez votre forfait (Blog Pro ou Blog Pro+), puis suivez les instructions de paiement. Votre accès est activé automatiquement après confirmation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false">
+            <span>Quelle est la différence entre Blog Pro et Blog Pro+ ?</span>
+            <i class="fas fa-chevron-down faq-item__icon"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p><strong>Blog Pro</strong> – Version Standard. Donne accès à un seul article exclusif le vendredi. L'accès expire le samedi à minuit.</p>
+            <p style="margin-top:10px"><strong>Blog Pro+</strong> – Version Premium. Offre un accès complet au catalogue exclusif pendant 30 jours, avec notifications email à chaque publication.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false">
+            <span>Comment confirmer mon paiement Mobile Money ?</span>
+            <i class="fas fa-chevron-down faq-item__icon"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Sélectionnez votre forfait au choix dans la rubrique <a href="newsletter.html">Accès Premium</a>. Sur la page suivante, choisissez un mode de paiement via Orange Money ou MTN MoMo, puis validez la transaction. Votre accès sera activé automatiquement.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false">
+            <span>Je suis en Europe ou aux États-Unis, comment payer ?</span>
+            <i class="fas fa-chevron-down faq-item__icon"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Depuis l'occident, vous pouvez payer via <strong>Visa</strong> ou <strong>MasterCard</strong> en euros ou dollars. Les montants sont indiqués sur la <a href="payment.html">page de paiement</a>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false">
+            <span>Les articles et guides sont-ils vraiment gratuits ?</span>
+            <i class="fas fa-chevron-down faq-item__icon"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Oui, 100%. Le <a href="blog.html">Blog</a> et les <a href="guide.html">Guides PDF</a> sont entièrement gratuits, sans inscription. La Newsletter Premium est une offre additionnelle pour les contenus exclusifs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false">
+            <span>Puis-je résilier mon forfait Blog Pro+ ?</span>
+            <i class="fas fa-chevron-down faq-item__icon"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Oui, à tout moment depuis la <a href="newsletter.html">page Newsletter</a> en cliquant sur "Résilier mon forfait". L'accès reste actif jusqu'à la fin de la période payée.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false">
+            <span>À quelle fréquence les articles sont-ils publiés ?</span>
+            <i class="fas fa-chevron-down faq-item__icon"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>BlogStack publie chaque <strong>vendredi</strong> sans exception — un article public sur le blog et un contenu exclusif pour les abonnés Premium.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" onclick="toggleFaq(this)" aria-expanded="false">
+            <span>Comment signaler un problème technique ?</span>
+            <i class="fas fa-chevron-down faq-item__icon"></i>
+          </button>
+          <div class="faq-item__answer">
+            <p>Envoyez un message via notre <a href="https://t.me/BlogStackBot" target="_blank" rel="noopener noreferrer">Support Telegram</a> en décrivant votre problème en détail (page concernée, appareil, message d'erreur).</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================
+         LIENS RAPIDES
+    ============================================ -->
+    <section class="help-section">
+      <p class="help-label">Naviguer</p>
+      <h2 class="help-section__title">Liens utiles</h2>
+      <div class="help-links">
+        <a href="index.html" class="help-link">
+          <i class="fas fa-house"></i>
+          <span>Accueil</span>
+          <i class="fas fa-arrow-right help-link__arrow"></i>
+        </a>
+        <a href="blog.html" class="help-link">
+          <i class="fas fa-newspaper"></i>
+          <span>Blog — articles gratuits</span>
+          <i class="fas fa-arrow-right help-link__arrow"></i>
+        </a>
+        <a href="guide.html" class="help-link">
+          <i class="fas fa-file-pdf"></i>
+          <span>Guides PDF gratuits</span>
+          <i class="fas fa-arrow-right help-link__arrow"></i>
+        </a>
+        <a href="newsletter.html" class="help-link">
+          <i class="fas fa-crown"></i>
+          <span>Newsletter Premium</span>
+          <i class="fas fa-arrow-right help-link__arrow"></i>
+        </a>
+        <a href="about.html" class="help-link">
+          <i class="fas fa-info-circle"></i>
+          <span>À propos de BlogStack</span>
+          <i class="fas fa-arrow-right help-link__arrow"></i>
+        </a>
+        <a href="payment.html" class="help-link">
+          <i class="fas fa-credit-card"></i>
+          <span>Page de paiement</span>
+          <i class="fas fa-arrow-right help-link__arrow"></i>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER MINIMAL
+  ============================================ -->
+  <footer class="help-footer">
+    <p>&copy; 2026 <span>BlogStack</span> — Tous droits réservés.</p>
+    <p class="help-footer__note">Toujours bloqué ? <a href="https://t.me/BlogStackBot" target="_blank" rel="noopener noreferrer">Écrivez-nous</a></p>
+  </footer>
+
+  <script>
+    /* Accordéon FAQ */
+    function toggleFaq(btn) {
+      const item   = btn.closest('.faq-item');
+      const answer = item.querySelector('.faq-item__answer');
+      const isOpen = item.classList.contains('faq-item--open');
+
+      document.querySelectorAll('.faq-item--open').forEach(el => {
+        el.classList.remove('faq-item--open');
+        el.querySelector('.faq-item__question').setAttribute('aria-expanded', 'false');
+        el.querySelector('.faq-item__answer').style.maxHeight = null;
+      });
+
+      if (!isOpen) {
+        item.classList.add('faq-item--open');
+        btn.setAttribute('aria-expanded', 'true');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    }
+  </script>
+
+</body>
+</html>

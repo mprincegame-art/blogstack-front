@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================
+       SEO PRIMAIRE
+  ============================================ -->
+  <title>À propos — BlogStack</title>
+  <meta name="description" content="Découvrez l'histoire de BlogStack, le blog d'analyses hebdomadaires sur l'intelligence artificielle créé par Prince Jr. Mission, valeurs et vision.">
+  <meta name="author" content="Prince Jr">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.blogstack.fr/about.html">
+
+  <!-- ============================================
+       OPEN GRAPH
+  ============================================ -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BlogStack">
+  <meta property="og:title" content="À propos — BlogStack">
+  <meta property="og:description" content="Découvrez l'histoire de BlogStack, blog d'analyses hebdomadaires sur l'intelligence artificielle créé par Prince Jr.">
+  <meta property="og:url" content="https://www.blogstack.fr/about.html">
+  <meta property="og:image" content="https://www.blogstack.fr/images/og-cover.jpg">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- ============================================
+       TWITTER CARD
+  ============================================ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@princejr_dev">
+  <meta name="twitter:creator" content="@princejr_dev">
+  <meta name="twitter:title" content="À propos — BlogStack">
+  <meta name="twitter:description" content="Découvrez l'histoire de BlogStack et la mission de Prince Jr.">
+  <meta name="twitter:image" content="https://www.blogstack.fr/images/og-cover.jpg">
+
+  <!-- ============================================
+       SCHEMA.ORG
+  ============================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "À propos — BlogStack",
+    "description": "Histoire et mission de BlogStack, blog d'analyses sur l'intelligence artificielle.",
+    "url": "https://www.blogstack.fr/about.html",
+    "author": {
+      "@type": "Person",
+      "name": "Prince Jr",
+      "sameAs": [
+        "https://twitter.com/princejr_dev",
+        "https://github.com/Princejr",
+        "https://www.linkedin.com/in/prince-jr-982502343"
+      ]
+    }
+  }
+  </script>
+
+  <!-- ============================================
+       FAVICON & RESSOURCES
+  ============================================ -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+
+  <!-- OVERLAY -->
+  <div id="overlay" class="bs-overlay"></div>
+
+  <!-- ============================================
+       HEADER
+  ============================================ -->
+  <header class="bs-header">
+    <div class="bs-header__left">
+      <img class="bs-header__icon" src="images/favicon.png" alt="Logo BlogStack">
+      <a href="index.html" class="bs-header__logo">BlogStack</a>
+    </div>
+    <button id="menu-toggle" class="bs-header__menu-btn" aria-label="Ouvrir le menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- MODAL MENU -->
+  <div id="modal" class="bs-modal" role="dialog" aria-label="Menu de navigation">
+    <div class="bs-modal__handle" id="handle"></div>
+    <ul class="bs-modal__nav">
+      <li><a href="blog.html"><i class="fas fa-newspaper"></i>Blog</a></li>
+      <li><a href="guide.html" onclick="alert('Vos guides PDF téléchargeables ne sont pas encore disponible pour le moment !'); return false;"><i class="fas fa-book-open"></i>Guides</a></li>
+      <li><a href="newsletter.html" onclick="alert('En cours de maintenance !'); return false;"><i class="fas fa-crown"></i>Newsletter Premium</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i>À Propos</a></li>
+    </ul>
+    <button class="bs-modal__subscribe" onclick="window.location.href='newsletter.html'">
+      S'abonner à la newsletter
+    </button>
+  </div>
+
+  <!-- ============================================
+       HERO
+  ============================================ -->
+  <section class="about-hero">
+    <div class="about-hero__inner">
+      <div class="about-hero__badge">
+        <i class="fas fa-info-circle"></i> À propos
+      </div>
+      <h1 class="about-hero__title">Derrière <span>BlogStack</span></h1>
+      <p class="about-hero__desc">Un blog, une mission : rendre l'intelligence artificielle compréhensible, utile et accessible à tous.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION : QUI SUIS-JE
+  ============================================ -->
+  <section class="about-section">
+    <div class="about-section__inner">
+
+      <div class="about-author">
+        <div class="about-author__avatar">
+          <i class="fas fa-user"></i>
+        </div>
+        
+        <div class="about-author__info">
+          <p class="about-author__label">Fondateur & rédacteur</p>
+          <h2 class="about-author__name">Prince Jr</h2>
+          <div class="about-author__socials">
+            <a href="https://twitter.com/princejr_dev" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://github.com/mprincegame-art" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/prince-jr-982502343" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:mprincegame@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-bio">
+        <p>Passionné de technologie et curieux de nature, j'ai créé BlogStack avec une idée simple : l'IA avance à une vitesse folle, et la plupart des gens passent à côté parce que l'information est soit trop technique, soit trop superficielle.</p>
+        <p>BlogStack est ma réponse à ce problème. Chaque vendredi, je creuse les tendances, décrypte les outils et traduis les avancées en stratégies concrètes — pour que tu puisses agir, pas juste lire.</p>
+        <p>Je crois fermement que l'IA n'est pas réservée aux ingénieurs ou aux grandes entreprises. Elle appartient à ceux qui prennent le temps de la comprendre.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION : LA MISSION
+  ============================================ -->
+  <section class="about-mission">
+    <div class="about-mission__inner">
+      <p class="about-label">La mission</p>
+      <h2 class="about-mission__title">Pourquoi BlogStack <span>existe</span></h2>
+      <p class="about-mission__desc">L'IA produit des milliers d'articles, d'outils et d'annonces chaque semaine. La vraie valeur n'est pas dans la quantité — elle est dans la capacité à trier, analyser et transmettre ce qui compte vraiment.</p>
+
+      <div class="mission-grid">
+        <div class="mission-item">
+          <div class="mission-item__icon"><i class="fas fa-filter"></i></div>
+          <h3>Trier le signal du bruit</h3>
+          <p>Pas de contenu généré automatiquement. Chaque article est rédigé, relu et validé manuellement.</p>
+        </div>
+        <div class="mission-item">
+          <div class="mission-item__icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Aller droit au but</h3>
+          <p>Des analyses courtes, denses et actionnables. Ton temps est précieux — on ne le gaspille pas.</p>
+        </div>
+        <div class="mission-item">
+          <div class="mission-item__icon"><i class="fas fa-users"></i></div>
+          <h3>Accessible à tous</h3>
+          <p>Entrepreneur, étudiant, curieux — BlogStack s'adresse à quiconque veut comprendre l'IA sans un doctorat.</p>
+        </div>
+        <div class="mission-item">
+          <div class="mission-item__icon"><i class="fas fa-calendar-check"></i></div>
+          <h3>Chaque vendredi, sans faute</h3>
+          <p>La régularité est une promesse. Une publication hebdomadaire, à heure fixe, depuis le premier jour.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION : CHIFFRES
+  ============================================ -->
+  <section class="about-stats">
+    <div class="about-stats__inner">
+      <div class="about-stat">
+        <span class="about-stat__num">+5</span>
+        <span class="about-stat__label">Articles publiés</span>
+      </div>
+      <div class="about-stat__divider"></div>
+      <div class="about-stat">
+        <span class="about-stat__num">100%</span>
+        <span class="about-stat__label">Contenu gratuit</span>
+      </div>
+      <div class="about-stat__divider"></div>
+      <div class="about-stat">
+        <span class="about-stat__num">+6</span>
+        <span class="about-stat__label">Guides PDF</span>
+      </div>
+      <div class="about-stat__divider"></div>
+      <div class="about-stat">
+        <span class="about-stat__num">1</span>
+        <span class="about-stat__label">Publication / semaine</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION : CONTACT
+  ============================================ -->
+  <section class="about-contact">
+    <div class="about-contact__inner">
+      <p class="about-label">Une question ? Une idée ?</p>
+      <h2 class="about-contact__title">Prends contact</h2>
+      <p class="about-contact__desc">Tu veux proposer un sujet, signaler une erreur, ou simplement discuter d'IA ? Je lis tous les messages.</p>
+      <div class="about-contact__actions">
+        <a href="mailto:mprincegame@gmail.com" class="btn-primary">
+          <i class="fas fa-envelope"></i> Envoyer un email
+        </a>
+        <a href="https://twitter.com/princejr_dev" target="_blank" rel="noopener noreferrer" class="btn-outline">
+          <i class="fab fa-x-twitter"></i> Me suivre sur X
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+  ============================================ -->
+  <footer class="bs-footer">
+    <div class="bs-footer__grid">
+
+      <div>
+        <div class="bs-footer__brand-name">Blog<span>Stack</span></div>
+        <p class="bs-footer__brand-desc">Analyses hebdomadaires des dernières tendances en intelligence artificielle. Décryptages, stratégies et conseils pour exploiter l'IA en 2026.</p>
+        <div class="bs-footer__socials">
+          <a href="https://twitter.com/princejr_dev" target="_blank" rel="noopener noreferrer" class="bs-footer__social-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          
+          <a href="https://github.com/mprincegame-art" target="_blank" rel="noopener noreferrer" class="bs-footer__social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          
+          <a href="https://www.linkedin.com/in/prince-jr-982502343" target="_blank" rel="noopener noreferrer" class="bs-footer__social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <p class="bs-footer__col-title">Navigation</p>
+        <ul class="bs-footer__links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="guide.html" onclick="alert('Vos guides PDF téléchargeables ne sont pas encore disponible pour le moment !'); return false;">Guides</a></li>
+          <li><a href="about.html">À propos</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="bs-footer__col-title">Légal & Contact</p>
+        <ul class="bs-footer__links">
+          <li><a href="help.html">Centre d'aide</a></li>
+          <li><a href="#">CGU</a></li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="mailto:mprincegame@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="bs-footer__divider"></div>
+    <div class="bs-footer__bottom">
+      <p class="bs-footer__copy">&copy; 2026 <span>BlogStack</span> — Tous droits réservés. Développé par Prince Jr.</p>
+      <div class="bs-footer__badge">Publié chaque vendredi</div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       SCRIPTS
+  ============================================ -->
+  <script>
+    const modal   = document.getElementById("modal");
+    const overlay = document.getElementById("overlay");
+    const toggle  = document.getElementById("menu-toggle");
+
+    function openModal() {
+      modal.classList.add("active");
+      overlay.classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+    function closeModal() {
+      modal.classList.remove("active");
+      overlay.classList.remove("active");
+      modal.style.transform = "";
+      document.body.style.overflow = "";
+    }
+    toggle.addEventListener("click", openModal);
+    overlay.addEventListener("click", closeModal);
+
+    let startY = 0, currentY = 0;
+    modal.addEventListener("touchstart", e => { startY = e.touches[0].clientY; });
+    modal.addEventListener("touchmove", e => {
+      currentY = e.touches[0].clientY;
+      const diff = currentY - startY;
+      if (diff > 0) modal.style.transform = `translateY(${diff}px)`;
+    });
+    modal.addEventListener("touchend", () => {
+      if (currentY - startY > 120) closeModal();
+      else modal.style.transform = "";
+    });
+  </script>
+
+</body>
+</html>

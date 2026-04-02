@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlogStack — Analyses IA & Tendances Intelligence Artificielle 2026</title>
+  <meta name="description" content="Chaque vendredi, BlogStack publie des analyses et décryptages sur les dernières tendances en intelligence artificielle. Stratégies, outils et conseils pour exploiter l'IA en 2026.">
+  <meta name="keywords" content="intelligence artificielle, IA, tendances IA, ChatGPT, machine learning, blog IA, newsletter IA, analyse IA 2026">
+  <meta name="author" content="Prince Jr">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.blogstack.fr/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BlogStack">
+  <meta property="og:title" content="BlogStack — Analyses IA & Tendances Intelligence Artificielle 2026">
+  <meta property="og:description" content="Chaque vendredi, des décryptages et analyses sur les tendances IA. Stratégies et conseils pour mieux exploiter l'intelligence artificielle.">
+  <meta property="og:url" content="https://www.blogstack.fr/">
+  <meta property="og:image" content="https://www.blogstack.fr/images/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="fr_FR">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@princejr_dev">
+  <meta name="twitter:creator" content="@princejr_dev">
+  <meta name="twitter:title" content="BlogStack — Analyses IA & Tendances 2026">
+  <meta name="twitter:description" content="Chaque vendredi, des décryptages et analyses sur les tendances IA. Stratégies et conseils pour mieux exploiter l'intelligence artificielle.">
+  <meta name="twitter:image" content="https://www.blogstack.fr/images/og-cover.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "BlogStack",
+    "description": "Analyses hebdomadaires des dernières tendances en intelligence artificielle.",
+    "url": "https://www.blogstack.fr",
+    "author": {
+      "@type": "Person",
+      "name": "Prince Jr",
+      "sameAs": [
+        "https://twitter.com/princejr_dev",
+        "https://github.com/Princejr",
+        "https://www.linkedin.com/in/prince-jr-982502343"
+      ]
+    },
+    "inLanguage": "fr",
+    "publisher": {
+      "@type": "Organization",
+      "name": "BlogStack",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.blogstack.fr/images/favicon.png"
+      }
+    }
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <!-- OVERLAY -->
+  <div id="overlay" class="bs-overlay"></div>
+
+  <!-- HEADER -->
+  <header class="bs-header">
+    <div class="bs-header__left">
+      <img class="bs-header__icon" src="images/favicon.png" alt="Logo BlogStack">
+      <a href="index.html" class="bs-header__logo">BlogStack</a>
+    </div>
+    <button id="menu-toggle" class="bs-header__menu-btn" aria-label="Ouvrir le menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- MODAL MENU -->
+  <div id="modal" class="bs-modal" role="dialog" aria-label="Menu de navigation">
+    <div class="bs-modal__handle" id="handle"></div>
+    <ul class="bs-modal__nav">
+      <li><a href="blog.html"><i class="fas fa-newspaper"></i>Blog</a></li>
+      <li><a href="guide.html" onclick="alert('Vos guides PDF téléchargeables ne sont pas encore disponible pour le moment !'); return false"><i class="fas fa-book-open"></i>Guides PDF</a></li>
+      <li><a href="newsletter.html" onclick="alert('En cours de maintenance !'); return false;"><i class="fas fa-crown"></i>Newsletter Premium</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i>À Propos</a></li>
+    </ul>
+    <button class="bs-modal__subscribe" onclick="window.location.href='newsletter.html'">
+      S'abonner à la newsletter
+    </button>
+  </div>
+
+  <!-- HERO SECTION  -->
+  <section class="hero-section">
+    <div class="hero-section__inner">
+      <div class="hero-section__badge">
+        <span class="hero-section__badge-dot"></span>
+        Publié chaque vendredi
+      </div>
+      <h1 class="hero-section__title">
+        L'IA décryptée,<br>
+        <span>chaque semaine.</span>
+      </h1>
+      <p class="hero-section__desc">
+        Analyses, stratégies et tendances sur l'Intelligence Artificielle — pour comprendre, anticiper et exploiter l'IA en 2026.
+      </p>
+      
+      <div class="hero-section__actions">
+        <a href="blog.html" class="btn-primary">Découvrir les articles</a>
+        <a href="newsletter.html" class="btn-secondary" onclick="alert('En cours de maintenance !'); return false;">Newsletter Premium</a>
+      </div>
+      
+      <div class="hero-section__stats">
+        <div class="hero-stat">
+          <span class="hero-stat__num">+5</span>
+          <span class="hero-stat__label">Articles publiés</span>
+        </div>
+        <div class="hero-stat__divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat__num">100%</span>
+          <span class="hero-stat__label">Contenu gratuit</span>
+        </div>
+        <div class="hero-stat__divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat__num">Chaque</span>
+          <span class="hero-stat__label">Vendredi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES POPULAIRES -->
+  <main>
+    <div class="section-header">
+      <h2 class="section-title">Articles populaires</h2>
+    </div>
+
+    <div class="articles-grid">
+
+      <article class="blog-card blog-card--featured">
+        <div class="blog-card__meta">
+          <span class="blog-card__num">01</span>
+          <span class="blog-card__date">5 décembre 2025</span>
+        </div>
+        <h2 class="blog-card__title">
+          <a href="article-1.html">Intelligence artificielle : un outil de destruction ou d'évolution ?</a>
+        </h2>
+        <p class="blog-card__excerpt">L'intelligence artificielle peut être à la fois un outil de destruction et d'évolution — tout dépend de comment l'humain choisit de s'en emparer.</p>
+        <a href="article-1.html" class="blog-card__link">
+          Lire l'article <i class="fas fa-arrow-right"></i>
+        </a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card__meta">
+          <span class="blog-card__num">02</span>
+          <span class="blog-card__date">9 janvier 2026</span>
+        </div>
+        <h2 class="blog-card__title">
+          <a href="article-2.html">Comment l'intelligence artificielle orchestre votre quotidien ?</a>
+        </h2>
+        <p class="blog-card__excerpt">L'IA apprend de vous, s'adapte à vos habitudes et facilite votre vie. Comment cette révolution silencieuse a-t-elle infiltré nos routines ?</p>
+        <a href="article-2.html" class="blog-card__link">
+          Lire l'article <i class="fas fa-arrow-right"></i>
+        </a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card__meta">
+          <span class="blog-card__num">03</span>
+          <span class="blog-card__date">19 décembre 2025</span>
+        </div>
+        <h2 class="blog-card__title">
+          <a href="article-3.html">Entraîner une IA : le parcours étonnant d'une IA qui apprend à penser</a>
+        </h2>
+        <p class="blog-card__excerpt">Plongez dans les coulisses de l'apprentissage machine, où les échecs sont célébrés et la répétition est reine.</p>
+        <a href="article-3.html" class="blog-card__link">
+          Lire l'article <i class="fas fa-arrow-right"></i>
+        </a>
+      </article>
+
+    </div>
+
+    <div class="articles-cta">
+      <a href="blog.html" class="btn-outline">
+        Voir tous les articles <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </main>
+
+  <!-- POURQUOI BLOGSTACK -->
+  <section class="benef-section">
+    <h2 class="section-title">Pourquoi suivre BlogStack ?</h2>
+    <div class="benef-grid">
+      <div class="benef-item">
+        <div class="benef-item__icon"><i class="fas fa-brain"></i></div>
+        <h3 class="benef-item__title">Analyse simplifiée</h3>
+        <p class="benef-item__desc">Des sujets complexes rendus accessibles, sans jargon inutile.</p>
+      </div>
+      <div class="benef-item">
+        <div class="benef-item__icon"><i class="fas fa-chart-line"></i></div>
+        <h3 class="benef-item__title">Nouveautés du marché</h3>
+        <p class="benef-item__desc">Les dernières tendances IA triées et analysées chaque semaine.</p>
+      </div>
+      <div class="benef-item">
+        <div class="benef-item__icon"><i class="fas fa-coins"></i></div>
+        <h3 class="benef-item__title">Astuces de monétisation</h3>
+        <p class="benef-item__desc">Des stratégies concrètes pour exploiter l'IA à ton avantage.</p>
+      </div>
+      <div class="benef-item">
+        <div class="benef-item__icon"><i class="fas fa-lightbulb"></i></div>
+        <h3 class="benef-item__title">Articles Stratégiques</h3>
+        <p class="benef-item__desc">Des contenus pensés pour agir, pas juste pour lire.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGES -->
+  <section class="testimonials" aria-label="Témoignages de lecteurs">
+    <h2 class="section-title">Ce qu'ils en disent</h2>
+    
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card">
+        <div class="testimonial-card__quote">"</div>
+        <p class="testimonial-texte">Grâce à BlogStack, j'ai enfin compris quelles tendances IA vont vraiment changer le marché cette année. Les articles sont clairs, précis et faciles à appliquer.</p>
+        <div class="testimonial-auteur">
+          <img src="images/profile-pic.png" alt="Julie Y. — Entrepreneure digitale" class="auteur-photo">
+          <div class="auteur-info">
+            <h4>Julie Y.</h4>
+            <div class="auteur-note">Entrepreneure digitale</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card__quote">"</div>
+        <p class="testimonial-texte">Je reçois chaque semaine les analyses BlogStack et je gagne un temps fou. Tout est centralisé et compréhensible — impossible de s'en passer.</p>
+        <div class="testimonial-auteur">
+          <img src="images/profile-pic2.png" alt="Marc N. — Développeur freelance" class="auteur-photo">
+          <div class="auteur-info">
+            <h4>Marc N.</h4>
+            <div class="auteur-note">Développeur freelance</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card__quote">"</div>
+        <p class="testimonial-texte">Les décryptages de BlogStack m'ont permis de lancer un projet pilote innovant. La newsletter est devenue indispensable pour rester à la pointe.</p>
+        <div class="testimonial-auteur">
+          <img src="images/profile-pic3.png" alt="Grace M. — Chef de produit tech" class="auteur-photo">
+          <div class="auteur-info">
+            <h4>Grace M.</h4>
+            <div class="auteur-note">Chef de produit tech</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="form-section" aria-label="Inscription à la newsletter">
+    <div class="form-container">
+      <div class="form-container__left">
+        <p class="form-container__label">Newsletter gratuite</p>
+        <h2 class="form-container__title">Rejoins les lecteurs<br><span>de BlogStack</span></h2>
+        <p class="form-container__desc">Chaque vendredi, une analyse IA directement dans ta boîte mail. Gratuit, sans spam.</p>
+      </div>
+      <div class="form-container__right">
+        <form id="contactForm" onsubmit="return handleSubmit(event)">
+          <div class="form-group">
+            <input type="text" placeholder="Entrez votre nom..." name="nom" autocomplete="family-name" required aria-label="Nom">
+            
+            <input type="text" placeholder="Entrez votre prénom..." name="prenom" autocomplete="given-name" required aria-label="Prénom">
+            
+            <input type="email" placeholder="votre@email.com" autocomplete="email" required aria-label="Adresse email">
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> S'abonner gratuitement
+          </button>
+          <div id="formMessage" class="form-message" role="alert"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bs-footer">
+    <div class="bs-footer__grid">
+
+      <div>
+        <div class="bs-footer__brand-name">Blog<span>Stack</span></div>
+        <p class="bs-footer__brand-desc">Analyses hebdomadaires des dernières tendances en intelligence artificielle. Décryptages, stratégies et conseils pour exploiter l'IA en 2026.</p>
+        <div class="bs-footer__socials">
+          <a href="https://twitter.com/princejr_dev" target="_blank" rel="noopener noreferrer" class="bs-footer__social-btn" aria-label="Twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a href="https://github.com/mprincegame-art" target="_blank" rel="noopener noreferrer" class="bs-footer__social-btn" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/prince-jr-982502343" target="_blank" rel="noopener noreferrer" class="bs-footer__social-btn" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <p class="bs-footer__col-title">Navigation</p>
+        <ul class="bs-footer__links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="guide.html" onclick="alert('Vos guides PDF téléchargeables ne sont pas encore disponible pour le moment !'); return false;">Guides</a></li>
+          <li><a href="about.html">À propos</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="bs-footer__col-title">Légal & Contact</p>
+        <ul class="bs-footer__links">
+          <li><a href="help.html">Centre d'aide</a></li>
+          <li><a href="#">CGU</a></li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="mailto:mprincegame@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="bs-footer__divider"></div>
+
+    <div class="bs-footer__bottom">
+      <p class="bs-footer__copy">&copy; 2026 <span>BlogStack</span> — Tous droits réservés. Développé par Prince Jr.</p>
+      <div class="bs-footer__badge">Publié chaque vendredi</div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+  <script>
+    const modal   = document.getElementById("modal");
+    const overlay = document.getElementById("overlay");
+    const toggle  = document.getElementById("menu-toggle");
+
+    function openModal() {
+      modal.classList.add("active");
+      overlay.classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal() {
+      modal.classList.remove("active");
+      overlay.classList.remove("active");
+      modal.style.transform = "";
+      document.body.style.overflow = "";
+    }
+
+    toggle.addEventListener("click", openModal);
+    overlay.addEventListener("click", closeModal);
+
+    let startY = 0, currentY = 0;
+    modal.addEventListener("touchstart", e => { startY = e.touches[0].clientY; });
+    modal.addEventListener("touchmove", e => {
+      currentY = e.touches[0].clientY;
+      const diff = currentY - startY;
+      if (diff > 0) modal.style.transform = `translateY(${diff}px)`;
+    });
+    modal.addEventListener("touchend", () => {
+      if (currentY - startY > 120) closeModal();
+      else modal.style.transform = "";
+    });
+  </script>
+
+</body>
+</html>
