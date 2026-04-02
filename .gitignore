@@ -137,3 +137,12 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Fichiers sensibles — ne jamais publier
+.env
+payment.html
+payment.css
+newsletter.html
+newsletter.css
+exclusive-*.html
+/backend
