@@ -1,448 +1,377 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PJr — Portfolio</title>
-  
-  <meta name="description" content="PJr — Front-end Developer and aspiring Data Analyst based in Cameroon. Available for remote work worldwide.">
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="PJr — Portfolio">
-  <meta property="og:description" content="Front-end Developer and Aspiring Data Analyst based in Cameroon. Available for remote work worldwide.">
-  <meta property="og:image" content="assets/photo.png">
-  <meta property="og:url" content="https://mprincegame-art.github.io">
-  <meta property="og:type" content="website">
+  <title>BlogStack — Analyses IA & Tendances Intelligence Artificielle 2026</title>
+  <meta name="description" content="Chaque vendredi, BlogStack publie des analyses et décryptages sur les dernières tendances en intelligence artificielle. Stratégies, outils et conseils pour exploiter l'IA en 2026.">
+  <meta name="keywords" content="intelligence artificielle, IA, tendances IA, ChatGPT, machine learning, blog IA, newsletter IA, analyse IA 2026">
+  <meta name="author" content="Prince Jr">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.blogstack.fr/">
 
-<!-- Twitter/X Card -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BlogStack">
+  <meta property="og:title" content="BlogStack — Analyses IA & Tendances Intelligence Artificielle 2026">
+  <meta property="og:description" content="Chaque vendredi, des décryptages et analyses sur les tendances IA. Stratégies et conseils pour mieux exploiter l'intelligence artificielle.">
+  <meta property="og:url" content="https://www.blogstack.fr/">
+  <meta property="og:image" content="https://www.blogstack.fr/images/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="fr_FR">
+
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="PJr — Portfolio">
-  <meta name="twitter:description" content="Front-end Developer and Aspiring Data Analyst based in Cameroon.">
-  <meta name="twitter:image" content="assets/photo.png">
-  
-  <link rel="stylesheet" href="style.css">
+  <meta name="twitter:site" content="@princejr_dev">
+  <meta name="twitter:creator" content="@princejr_dev">
+  <meta name="twitter:title" content="BlogStack — Analyses IA & Tendances 2026">
+  <meta name="twitter:description" content="Chaque vendredi, des décryptages et analyses sur les tendances IA. Stratégies et conseils pour mieux exploiter l'intelligence artificielle.">
+  <meta name="twitter:image" content="https://www.blogstack.fr/images/og-cover.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "BlogStack",
+    "description": "Analyses hebdomadaires des dernières tendances en intelligence artificielle.",
+    "url": "https://www.blogstack.fr",
+    "author": {
+      "@type": "Person",
+      "name": "Prince Jr",
+      "sameAs": [
+        "https://twitter.com/princejr_dev",
+        "https://github.com/Princejr",
+        "https://www.linkedin.com/in/prince-jr-982502343"
+      ]
+    },
+    "inLanguage": "fr",
+    "publisher": {
+      "@type": "Organization",
+      "name": "BlogStack",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.blogstack.fr/images/favicon.png"
+      }
+    }
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
-  
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="assets/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  
-  <meta name="msapplication-TileColor" content="#10B981">
-  <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
-  <meta name="theme-color" content="#10B981">
-  
-  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-  
-  <!-- PAGE LOADER -->
-<div id="loader" class="loader">
-  <div class="loader-ring">
-    <span>PJr</span>
-  </div>
-</div>
-
-<!-- PROGRESS BAR -->
-<div id="progressBar" class="progress-bar"></div>
 
   <!-- OVERLAY -->
-  <div id="overlay" class="overlay"></div>
+  <div id="overlay" class="bs-overlay"></div>
 
-  <!-- SCROLL TO TOP -->
-  <button id="scrollTop" class="scroll-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
-
-  <!-- ===== HEADER ===== -->
-  <header class="hero-section">
-    <div class="header-inner">
-      
-      <div class="initial"><span>PJr</span></div>
-      
-      <nav>
-  <!-- Menu desktop -->
-  <ul class="desktop-nav">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <a href="assets/cv.pdf" download class="btn-cv">Download CV</a>
-  </ul>
-  
-  <!-- Bouton hamburger mobile -->
-  <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">
-    <i class="fas fa-bars"></i>
-  </button>
-  
-  <!-- Modal mobile (inchangé) -->
-  <div id="modal" class="modal">
-    <div class="handle" id="handle"></div>
-    <p class="modal-greeting">Navigation</p>
-    <ul>
-      <li><a href="#home"><i class="fas fa-house"></i>Home</a></li>
-      <li><a href="#about"><i class="fas fa-user"></i>About</a></li>
-      <li><a href="#skills"><i class="fas fa-code"></i>Skills</a></li>
-      <li><a href="#projects"><i class="fas fa-folder-open"></i>Projects</a></li>
-      <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
-    </ul>
-    <a href="assets/cv.pdf" download class="submit-btn2">
-      <i class="fas fa-file-arrow-down"></i> Download CV
-    </a>
-  </div>
-</nav>
-      
+  <!-- HEADER -->
+  <header class="bs-header">
+    <div class="bs-header__left">
+      <img class="bs-header__icon" src="images/favicon.png" alt="Logo BlogStack">
+      <a href="index.html" class="bs-header__logo">BlogStack</a>
     </div>
+    <button id="menu-toggle" class="bs-header__menu-btn" aria-label="Ouvrir le menu">
+      <i class="fas fa-bars"></i>
+    </button>
   </header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero-content" id="home">
-    <div class="hero-text">
+  <!-- MODAL MENU -->
+  <div id="modal" class="bs-modal" role="dialog" aria-label="Menu de navigation">
+    <div class="bs-modal__handle" id="handle"></div>
+    <ul class="bs-modal__nav">
+      <li><a href="blog.html"><i class="fas fa-newspaper"></i>Blog</a></li>
+      <li><a href="guide.html" onclick="alert('Vos guides PDF téléchargeables ne sont pas encore disponible pour le moment !'); return false"><i class="fas fa-book-open"></i>Guides PDF</a></li>
+      <li><a href="newsletter.html" onclick="alert('En cours de maintenance !'); return false;"><i class="fas fa-crown"></i>Newsletter Premium</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i>À Propos</a></li>
+    </ul>
+    <button class="bs-modal__subscribe" onclick="window.location.href='newsletter.html'">
+      S'abonner à la newsletter
+    </button>
+  </div>
+
+  <!-- HERO SECTION  -->
+  <section class="hero-section">
+    <div class="hero-section__inner">
+      <div class="hero-section__badge">
+        <span class="hero-section__badge-dot"></span>
+        Publié chaque vendredi
+      </div>
+      <h1 class="hero-section__title">
+        L'IA décryptée,<br>
+        <span>chaque semaine.</span>
+      </h1>
+      <p class="hero-section__desc">
+        Analyses, stratégies et tendances sur l'<a href="ai.html" class="blog-card__tit">Intelligence Artificielle</a> — pour comprendre, anticiper et exploiter l'IA en 2026.
+      </p>
       
-      <p class="hero-label">Hello, I'm</p>
+      <div class="hero-section__actions">
+        <a href="blog.html" class="btn-primary">Découvrir les articles</a>
+        <a href="newsletter.html" class="btn-secondary" onclick="alert('En cours de maintenance !'); return false;">Newsletter Premium</a>
+      </div>
       
-      <h1 class="hero-name">Prince Jr</h1>
-      
-      <h2 class="hero-title">Front-end Dev <span class="divider">|</span> Data Analyst</h2>
-     
-      <p class="hero-sub">Turning ideas into interfaces & data into decisions.</p>
-      
-      <div class="hero-cta">
-        <a href="#projects" class="btn-primary">View My Work</a>
-        <a href="#contact" class="btn-secondary">Contact Me</a>
+      <div class="hero-section__stats">
+        <div class="hero-stat">
+          <span class="hero-stat__num">+5</span>
+          <span class="hero-stat__label">Articles publiés</span>
+        </div>
+        <div class="hero-stat__divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat__num">100%</span>
+          <span class="hero-stat__label">Contenu gratuit</span>
+        </div>
+        <div class="hero-stat__divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat__num">Chaque</span>
+          <span class="hero-stat__label">Vendredi</span>
+        </div>
       </div>
     </div>
+  </section>
+
+  <!-- ARTICLES POPULAIRES -->
+  <main>
+    <div class="section-header">
+      <h2 class="section-title">Articles populaires</h2>
+    </div>
+
+    <div class="articles-grid">
+
+      <article class="blog-card blog-card--featured">
+        <div class="blog-card__meta">
+          <span class="blog-card__num">01</span>
+          <span class="blog-card__date">5 décembre 2025</span>
+        </div>
+        <h2 class="blog-card__title">
+          <a href="article-1.html">Intelligence artificielle : un outil de destruction ou d'évolution ?</a>
+        </h2>
+        <p class="blog-card__excerpt">L'intelligence artificielle peut être à la fois un outil de destruction et d'évolution — tout dépend de comment l'humain choisit de s'en emparer.</p>
+        <a href="article-1.html" class="blog-card__link">
+          Lire l'article <i class="fas fa-arrow-right"></i>
+        </a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card__meta">
+          <span class="blog-card__num">02</span>
+          <span class="blog-card__date">9 janvier 2026</span>
+        </div>
+        <h2 class="blog-card__title">
+          <a href="article-2.html">Comment l'intelligence artificielle orchestre votre quotidien ?</a>
+        </h2>
+        <p class="blog-card__excerpt">L'IA apprend de vous, s'adapte à vos habitudes et facilite votre vie. Comment cette révolution silencieuse a-t-elle infiltré nos routines ?</p>
+        <a href="article-2.html" class="blog-card__link">
+          Lire l'article <i class="fas fa-arrow-right"></i>
+        </a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card__meta">
+          <span class="blog-card__num">03</span>
+          <span class="blog-card__date">19 décembre 2025</span>
+        </div>
+        <h2 class="blog-card__title">
+          <a href="article-3.html">Entraîner une IA : le parcours étonnant d'une IA qui apprend à penser</a>
+        </h2>
+        <p class="blog-card__excerpt">Plongez dans les coulisses de l'apprentissage machine, où les échecs sont célébrés et la répétition est reine.</p>
+        <a href="article-3.html" class="blog-card__link">
+          Lire l'article <i class="fas fa-arrow-right"></i>
+        </a>
+      </article>
+
+    </div>
+
+    <div class="articles-cta">
+      <a href="blog.html" class="btn-outline">
+        Voir tous les articles <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </main>
+
+  <!-- POURQUOI BLOGSTACK -->
+  <section class="benef-section">
+    <h2 class="section-title">Pourquoi suivre BlogStack ?</h2>
+    <div class="benef-grid">
+      <div class="benef-item">
+        <div class="benef-item__icon"><i class="fas fa-brain"></i></div>
+        <h3 class="benef-item__title">Analyse simplifiée</h3>
+        <p class="benef-item__desc">Des sujets complexes rendus accessibles, sans jargon inutile.</p>
+      </div>
+      <div class="benef-item">
+        <div class="benef-item__icon"><i class="fas fa-chart-line"></i></div>
+        <h3 class="benef-item__title">Nouveautés du marché</h3>
+        <p class="benef-item__desc">Les dernières tendances IA triées et analysées chaque semaine.</p>
+      </div>
+      <div class="benef-item">
+        <div class="benef-item__icon"><i class="fas fa-coins"></i></div>
+        <h3 class="benef-item__title">Astuces de monétisation</h3>
+        <p class="benef-item__desc">Des stratégies concrètes pour exploiter l'IA à ton avantage.</p>
+      </div>
+      <div class="benef-item">
+        <div class="benef-item__icon"><i class="fas fa-lightbulb"></i></div>
+        <h3 class="benef-item__title">Articles Stratégiques</h3>
+        <p class="benef-item__desc">Des contenus pensés pour agir, pas juste pour lire.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGES -->
+  <section class="testimonials" aria-label="Témoignages de lecteurs">
+    <h2 class="section-title">Ce qu'ils en disent</h2>
     
-    <div class="hero-badge">
-      <div class="badge-ring">
-        <img src="assets/photo.png" alt="Profile photo" class="profile-photo">
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card">
+        <div class="testimonial-card__quote">"</div>
+        <p class="testimonial-texte">Grâce à BlogStack, j'ai enfin compris quelles tendances IA vont vraiment changer le marché cette année. Les articles sont clairs, précis et faciles à appliquer.</p>
+        <div class="testimonial-auteur">
+          <img src="images/profile-pic.png" alt="Julie Y. — Entrepreneure digitale" class="auteur-photo">
+          <div class="auteur-info">
+            <h4>Julie Y.</h4>
+            <div class="auteur-note">Entrepreneure digitale</div>
+          </div>
+        </div>
       </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card__quote">"</div>
+        <p class="testimonial-texte">Je reçois chaque semaine les analyses BlogStack et je gagne un temps fou. Tout est centralisé et compréhensible — impossible de s'en passer.</p>
+        <div class="testimonial-auteur">
+          <img src="images/profile-pic2.png" alt="Marc N. — Développeur freelance" class="auteur-photo">
+          <div class="auteur-info">
+            <h4>Marc N.</h4>
+            <div class="auteur-note">Développeur freelance</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card__quote">"</div>
+        <p class="testimonial-texte">Les décryptages de BlogStack m'ont permis de lancer un projet pilote innovant. La newsletter est devenue indispensable pour rester à la pointe.</p>
+        <div class="testimonial-auteur">
+          <img src="images/profile-pic3.png" alt="Grace M. — Chef de produit tech" class="auteur-photo">
+          <div class="auteur-info">
+            <h4>Grace M.</h4>
+            <div class="auteur-note">Chef de produit tech</div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="section about-section">
-    
-    <div class="section-inner">
-      <div class="section-tag">01 — About Me</div>
-      
-      <h2 class="section-title">Who I Am</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>I'm a <strong>Front-end Developer</strong> based in Cameroon, with solid skills in HTML5, CSS3 and JavaScript Vanilla. I'm currently transitioning into <strong>Data Analytics</strong>, building expertise in SQL, Python, Power BI and Excel.</p>
-          <p>My goal is to combine my passion for clean interfaces with the power of data — helping businesses make smarter decisions through both great design and meaningful insights.</p>
-          <p>I'm on a mission to work with international companies, master English, and bring my skills to the global stage.</p>
-          
-          <div class="about-info">
-            <div class="info-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Cameroon</span>
-            </div>
-            
-            <div class="info-item">
-              <i class="fas fa-briefcase"></i>
-              <span>Open to Remote Work</span>
-            </div>
-            
-            <div class="info-item">
-              <i class="fas fa-language"></i>
-              <span>French & English</span>
-            </div>
-          </div>
-        </div>
-        
-        <div class="about-stats">
-          <div class="stat-card">
-            <span class="stat-number">2+</span>
-            <span class="stat-label">Years in Web Dev</span>
-          </div>
-          
-          <div class="stat-card">
-            <span class="stat-number">10+</span>
-            <span class="stat-label">Projects Built</span>
-          </div>
-          
-          <div class="stat-card">
-            <span class="stat-number">4</span>
-            <span class="stat-label">Data Skills Learning</span>
-          </div>
-          
-          <div class="stat-card accent">
-            <span class="stat-number">∞</span>
-            <span class="stat-label">Ambition Level</span>
-          </div>
-        </div>
+  <!-- NEWSLETTER -->
+  <section class="form-section" aria-label="Inscription à la newsletter">
+    <div class="form-container">
+      <div class="form-container__left">
+        <p class="form-container__label">Newsletter gratuite</p>
+        <h2 class="form-container__title">Rejoins les lecteurs<br><span>de BlogStack</span></h2>
+        <p class="form-container__desc">Chaque vendredi, une analyse IA directement dans ta boîte mail. Gratuit, sans spam.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- ===== SKILLS ===== -->
-  <section id="skills" class="section skills-section">
-    <div class="section-inner">
-      <div class="section-tag">02 — Skills</div>
-      <h2 class="section-title">What I Do</h2>
-
-      <div class="skills-grid">
-       
-        <!-- FRONT-END -->
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <i class="fas fa-laptop-code"></i>
-            <h3>Front-end Development</h3>
-          </div>
-          
-          <div class="skill-tags">
-            <span class="tag solid">HTML5</span>
-            <span class="tag solid">CSS3</span>
-            <span class="tag solid">JavaScript</span>
-            
-            <span class="tag outline">React <span class="soon">soon</span></span>
-          </div>
-        </div>
-
-        <!-- DATA -->
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <i class="fas fa-chart-bar"></i>
-            <h3>Data Analytics</h3>
-          </div>
-          
-          <div class="skill-tags">
-            <span class="tag learning">SQL <span class="badge">learning</span></span>
-            <span class="tag learning">Python <span class="badge">learning</span></span>
-            <span class="tag learning">Power BI <span class="badge">learning</span></span>
-            <span class="tag learning">Excel <span class="badge">learning</span></span>
-          </div>
-        </div>
-
-        <!-- CLOUD -->
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <i class="fas fa-cloud"></i>
-            <h3>Cloud & Tools</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="tag outline">AWS <span class="soon">soon</span></span>
-            <span class="tag outline">Azure <span class="soon">soon</span></span>
-            <span class="tag solid">Git & GitHub</span>
-            <span class="tag solid">VS Code</span>
-          </div>
-        </div>
-
-        <!-- SOFT SKILLS -->
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <i class="fas fa-brain"></i>
-            <h3>Soft Skills</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="tag solid">Analytical Thinking</span>
-            <span class="tag solid">Problem Solving</span>
-            <span class="tag solid">Fast Learner</span>
-            <span class="tag solid">Remote Ready</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects" class="section projects-section">
-    <div class="section-inner">
-      
-      <div class="section-tag">03 — Projects</div>
-      
-      <h2 class="section-title">My Work</h2>
-      
-      <p class="section-sub">Projects I've built and analyses I've done. More coming soon as I grow my data skills.</p>
-      
-      <div class="projects-grid">
-        
-        <!-- PROJECT #1 -->
-        <div class="project-card">
-          <div class="project-img web"><i class="fas fa-globe"></i></div>
-          
-          <div class="project-body">
-            
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-            
-            <h3>Personal Portfolio</h3>
-            
-            <p>A responsive, mobile-first portfolio showcasing my front-end skills. Dark mode design with smooth animations and a bottom-sheet navigation.</p>
-            
-            <div class="project-links">
-              <a href="https://github.com/mprincegame-art" class="link-btn"><i class="fab fa-github"></i> GitHub</a>
-              
-              <a href="#" class="link-btn primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- PROJECT #2 -->
-        <div class="project-card">
-          <div class="project-img data"><i class="fas fa-chart-line"></i></div>
-          
-          <div class="project-body">
-            <div class="project-tags">
-              <span>SQL</span><span>Excel</span><span>Power BI</span>
-            </div>
-            
-            <h3>Sales Data Analysis</h3>
-            
-            <p>Analysis of a retail company's sales data — identifying trends, top-performing regions, and recommending strategies using SQL queries and Power BI dashboards.</p>
-            
-            <div class="project-links">
-              <a href="https://github.com/mprincegame-art" class="link-btn"><i class="fab fa-github"></i> GitHub</a>
-              <a href="#" class="link-btn primary"><i class="fas fa-chart-bar"></i> View Dashboard</a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- PROJECT #3 -->
-        <div class="project-card">
-          <div class="project-img python"><i class="fab fa-python"></i></div>
-          
-          <div class="project-body">
-            <div class="project-tags">
-              <span>Python</span><span>Pandas</span><span>Matplotlib</span>
-            </div>
-            
-            <h3>Customer Churn Analysis</h3>
-            
-            <p>Used Python and Pandas to identify customers at risk of leaving a telecom company — cleaning data, visualizing patterns, and providing actionable insights.</p>
-            
-            <div class="project-links">
-              <a href="https://github.com/mprincegame-art" class="link-btn"><i class="fab fa-github"></i> GitHub</a>
-              <a href="#" class="link-btn primary"><i class="fas fa-file-alt"></i> View Report</a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- OTHER PROJECTS BUTTON -->
-         <div class="other-projects">
-          <a href="projects.html" class="btn-secondary">
-          <i class="fas fa-folder-open"></i> View All Projects
-          </a>
-         </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="section contact-section">
-    <div class="section-inner">
-      <div class="section-tag">04 — Contact</div>
-      <h2 class="section-title">Let's Connect</h2>
-      <p class="section-sub">Open to remote opportunities, freelance projects, and collaborations worldwide.</p>
-
-      <div class="contact-grid">
-        <div class="contact-info">
-          
-          <!-- SEND EMAIL -->
-          <a href="mailto:juniorpro2098@gmail.com" class="contact-card">
-            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-            <div>
-              <p class="contact-label">Email</p>
-              <p class="contact-value">Send me an E-mail</p>
-            </div>
-          </a>
-          
-          <!-- LINKEDIN -->
-          <a href="https://www.linkedin.com/in/prince-jr" target="_blank" class="contact-card">
-            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
-            <div>
-              <p class="contact-label">LinkedIn</p>
-              <p class="contact-value">Visit my linkedin profile</p>
-            </div>
-          </a>
-          
-          <!-- X (TWITTER) -->
-          <a href="https://x.com/princejr_dev" target="_blank" class="contact-card">
-            <div class="contact-icon"><i class="fab fa-x-twitter"></i></div>
-            <div>
-              <p class="contact-label">𝕏 (Twitter)</p>
-              <p class="contact-value">DM me on 𝕏</p>
-            </div>
-          </a>
-          
-          <!-- GITHUB -->
-          <a href="https://github.com/mprincegame-art" target="_blank" class="contact-card">
-            <div class="contact-icon"><i class="fab fa-github"></i></div>
-            <div>
-              <p class="contact-label">GitHub</p>
-              <p class="contact-value">My GitHub account</p>
-            </div>
-          </a>
-          
-          <!-- AVAILABILITY -->
-          <div class="availability-card">
-           <div class="contact-icon"><i class="fas fa-clock"></i></div>
-           
-        <div>
-          <p class="contact-label">Availability</p>
-          <p class="contact-value">Mon – Fri : 9AM – 5PM</p>
-          <p class="contact-value">Sat : 8AM – 12AM</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="response-time">
-      <i class="fas fa-clock"></i>
-      <p>I typically respond within <span>24 hours</span></p>
-    </div>
-
-<!-- CONTACT FORM -->
-        <form class="contact-form" id="contactForm">
+      <div class="form-container__right">
+        <form id="contactForm" onsubmit="return handleSubmit(event)">
           <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" placeholder="Jones Baldwin" required>
+            <input type="text" placeholder="Entrez votre nom..." name="nom" autocomplete="family-name" required aria-label="Nom">
+            
+            <input type="text" placeholder="Entrez votre prénom..." name="prenom" autocomplete="given-name" required aria-label="Prénom">
+            
+            <input type="email" placeholder="votre@email.com" autocomplete="email" required aria-label="Adresse email">
           </div>
-          
-          <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" placeholder="jones@example.com" required>
-          </div>
-          
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-          </div>
-          
-          <button type="submit" class="btn-primary full-width">
-            <i class="fas fa-paper-plane"></i> Send Message
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> S'abonner gratuitement
           </button>
+          <div id="formMessage" class="form-message" role="alert"></div>
         </form>
-        
       </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <p class="footer-logo">PJr</p>
-      
-      <p class="footer-text">Built using HTML, CSS & JavaScript</p>
-      
-      <p class="footer-copy">&copy; 2026 PJr — All rights reserved.</p>
+  <!-- FOOTER -->
+  <footer class="bs-footer">
+    <div class="bs-footer__grid">
+
+      <div>
+        <div class="bs-footer__brand-name">Blog<span>Stack</span></div>
+        <p class="bs-footer__brand-desc">Analyses hebdomadaires des dernières tendances en intelligence artificielle. Décryptages, stratégies et conseils pour exploiter l'IA en 2026.</p>
+        <div class="bs-footer__socials">
+          <a href="https://twitter.com/princejr_dev" target="_blank" rel="noopener noreferrer" class="bs-footer__social-btn" aria-label="Twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a href="https://github.com/mprincegame-art" target="_blank" rel="noopener noreferrer" class="bs-footer__social-btn" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/prince-jr-982502343" target="_blank" rel="noopener noreferrer" class="bs-footer__social-btn" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <p class="bs-footer__col-title">Navigation</p>
+        <ul class="bs-footer__links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="guide.html" onclick="alert('Vos guides PDF téléchargeables ne sont pas encore disponible pour le moment !'); return false;">Guides</a></li>
+          <li><a href="about.html">À propos</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="bs-footer__col-title">Légal & Contact</p>
+        <ul class="bs-footer__links">
+          <li><a href="help.html">Centre d'aide</a></li>
+          <li><a href="#">CGU</a></li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="mailto:mprincegame@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="bs-footer__divider"></div>
+
+    <div class="bs-footer__bottom">
+      <p class="bs-footer__copy">&copy; 2026 <span>BlogStack</span> — Tous droits réservés. Développé par Prince Jr.</p>
+      <div class="bs-footer__badge">Publié chaque vendredi</div>
     </div>
   </footer>
 
+  <!-- SCRIPTS -->
   <script src="script.js"></script>
+  <script>
+    const modal   = document.getElementById("modal");
+    const overlay = document.getElementById("overlay");
+    const toggle  = document.getElementById("menu-toggle");
+
+    function openModal() {
+      modal.classList.add("active");
+      overlay.classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal() {
+      modal.classList.remove("active");
+      overlay.classList.remove("active");
+      modal.style.transform = "";
+      document.body.style.overflow = "";
+    }
+
+    toggle.addEventListener("click", openModal);
+    overlay.addEventListener("click", closeModal);
+
+    let startY = 0, currentY = 0;
+    modal.addEventListener("touchstart", e => { startY = e.touches[0].clientY; });
+    modal.addEventListener("touchmove", e => {
+      currentY = e.touches[0].clientY;
+      const diff = currentY - startY;
+      if (diff > 0) modal.style.transform = `translateY(${diff}px)`;
+    });
+    modal.addEventListener("touchend", () => {
+      if (currentY - startY > 120) closeModal();
+      else modal.style.transform = "";
+    });
+  </script>
+
 </body>
 </html>
